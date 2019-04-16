@@ -1,0 +1,22 @@
+min_f1 , max_f1
+
+min_f2 , max_f2
+
+no.of vertices
+
+no.of edges
+
+f1_values , f2_values , critical_point_flag , size_of_node
+
+
+
+
+
+
+Here f1 are proton density and f2 are neutron densities.
+The flag represents the critical(1) or non-critical(0) node.
+The size of node is the no. of nodes with such a pair of values.
+
+
+The dataset provided is of plutonium atom at time step 692.
+The scission point is at this time step. 
