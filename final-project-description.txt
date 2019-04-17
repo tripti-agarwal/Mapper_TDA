@@ -1,0 +1,10 @@
+Final Project: Mapper on Joint Contour Net (JCN)
+Weightage: 40%
+
+Description:  
+
+1. Compute JCN of real data (e.g. Nuclear Scission, Isabel Data)
+2. Compute Mapper on JCN
+3. Compute Simplified JCN using different strategies of the MOG-paper
+4. Prepare a latex report on extraction of topological features (e.g. ‘nuclear scission’ or ‘eye of Isabel’)  in the above data
+5. Submission deadline: 30th April, 2019
