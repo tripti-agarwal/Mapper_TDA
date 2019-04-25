@@ -2,15 +2,6 @@ from read_data import data_f1,data_f2,weights,critical_flag,data_edges
 import math
 #filter function by using the formula eigen function from graph laplacian from MOG paper  by Mustafa Hajij
 
-def filter_range():
-	filtered_list = my_filter()
-	filtered_list.sort(key = lambda filtered_list: filtered_list[1])    #sort list according to filter_val
-	filter_range=[]
-	minimum=filtered_list[0][1]
-	maximum=filtered_list[len(filtered_list)-1][1]
-	filter_range.append(minimum)
-	filter_range.append(maximum)
-	return filter_range
 def my_filter():
 	filter_lol=[]
 	for i in range(len(adjacent_vertices)):
@@ -22,12 +13,27 @@ def my_filter():
 		filter_value_list.append(i)
 		filter_value_list.append(val)
 		filter_value_list.append(int(weight[i]))
-		filter_lol.append(filter_value_list)						
-	return filter_lol
+		filter_lol.append(filter_value_list)   						
+	return filter_lol      #consist of list of list with each list containing <node_no.,filter_val,weigth of the node>.
+
+
+
+
+def filter_range():
+	filtered_list = my_filter()
+	filtered_list.sort(key = lambda filtered_list: filtered_list[1])    #sort list according to filter_val
+	filter_range=[]
+	minimum=filtered_list[0][1]
+	maximum=filtered_list[len(filtered_list)-1][1]
+	filter_range.append(minimum)
+	filter_range.append(maximum)
+	return filter_range,filtered_list     #calculate the filter range
+
 
 
 f1=data_f1
 f2=data_f2
 weight=weights
 adjacent_vertices=data_edges
-filter_range = filter_range()	
+filter_range,filtered_list = filter_range()	
+

@@ -43,5 +43,6 @@ def binning():
 	
 # bin=(filter.range[1]-filter.range[0])//N
 #define covers, find no. of nodes in each cover, then add the filter val of the nodes and the no. of nodes which have been added
-N=100   #no. of covers
+N=40   #no. of covers
 p=0.8	#overlap = 80%
+overlaped_covers=binning();
