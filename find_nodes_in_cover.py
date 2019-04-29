@@ -1,13 +1,12 @@
 from cover import *
 from filter import *
-#print len(filtered_list)
-#print overlaped_covers
+
 def insert_nodes_in_overlapped_bins():
 	lol_empty=[]
 	for i in range(len(overlaped_covers)):
 		create_empty_list=[]
 		lol_empty.append(create_empty_list)
-	#print len(lol_empty)
+		
 	for i in range(len(filtered_list)):
 		x=filtered_list[i][1]
 		node_no=filtered_list[i][0]

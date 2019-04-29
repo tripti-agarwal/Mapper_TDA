@@ -4,7 +4,6 @@ def get_no_bins(minimum,maximum,N):
 	if (n%10!=0):
 		n=n+1
 		n=n//1
-	print n
 	return n
 
 def get_absolute_covers(minimum,maximum,n):
@@ -42,8 +41,7 @@ def binning():
 	overlaped_covers=get_overlapped_covers(absolute_covers,p,n)
 	return overlaped_covers
 	
-# bin=(filter.range[1]-filter.range[0])//N
 #define covers, find no. of nodes in each cover, then add the filter val of the nodes and the no. of nodes which have been added
-N=10   #no. of covers
-p=0.86	#overlap = 80%
+N=10  #no. of covers
+p=0.8 #overlap = 80%
 overlaped_covers=binning();
